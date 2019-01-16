@@ -1,12 +1,9 @@
 pipeline {
   agent {
-    node {
-      label 'NodeDocker'
-    }
-
+    dockerfile true
   }
   stages {
-    stage('') {
+    stage('Initial') {
       steps {
         sh 'npm -v'
       }
