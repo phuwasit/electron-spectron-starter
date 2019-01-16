@@ -3,9 +3,9 @@ pipeline {
     dockerfile true
   }
   stages {
-    stage('Initial') {
+    stage('NPM Setup') {
       steps {
-        sh 'npm -v'
+        sh 'npm install'
       }
     }
     stage('Test') {
